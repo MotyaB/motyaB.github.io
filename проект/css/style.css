@@ -1,0 +1,162 @@
+fhtml,
+body {
+    margin: 10px;
+
+    font-size: 100%;
+    font-family: "Arial", "Helvetica Neue", "Helvetica", sans-serif;
+    color: white;
+    background-color: #222222;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+    color: #E69A3E;
+}
+
+/* Header */
+
+/* {
+    outline: 1px solid blue;
+}*/
+
+.logo {
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+}
+
+.logo-icon {
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    position: relative;
+}
+
+.logo-icon:hover::after {
+    content: attr(data-title);
+    position: absolute;
+    left: 20%;
+    top: 30%;
+    z-index: 1;
+
+    background: rgba(0, 112, 24, 1);
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+    padding: 5px 10px;
+    border: 1px solid #333;
+}
+
+#nnavv {
+    float: left;
+    margin-bottom: 10;
+    width: 500px;
+    list-style: none;
+    font-weight: bold;
+}
+
+#nnavv li {
+    float: left;
+    display: block;
+    margin-right: 10;
+    position: relative;
+}
+
+#nnavv li a {
+    background: #333;
+    display: block;
+    padding: 5;
+    color: #fff;
+    text-decoration: none;
+    -moz-border-radius: 2;
+    -webkit-border-radius: 2;
+    border-radius: 2;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.74);
+}
+
+#nnavv li a:hover {
+    text-decoration: underline;
+    background: #6b0c33;
+    color: #fff;
+    background: rgba(108, 13, 53, 0.74);
+}
+
+#nnavv ul {
+    list-style: none;
+    left: -9999px;
+    opacity: 0;
+    -webkit-transition: 0.24s linear opacity;
+    position: absolute;
+}
+
+#nnavv ul li {
+    padding-top: 1px;
+    float: none;
+}
+
+#nnavv ul a {
+    display: block;
+    white-space: nowrap;
+}
+
+#nnavv li:hover ul {
+    left: 0;
+    opacity: 1;
+}
+
+#nnavv li:hover a {
+
+    text-decoration: underline;
+    background: rgba(109, 15, 53, 0.74);
+    background: #6b0c36;
+}
+
+#nnavv li:hover ul a {
+    text-decoration: none;
+    -webkit-transition: -webkit-transform 0.077s linear;
+}
+
+#nnavv li:hover ul li a:hover {
+    -moz-transform: scale(1.07);
+    -webkit-transform: scale(1.07);
+    background: #334;
+    background: rgba(50, 50, 50, 0.74);
+    text-decoration: underline;
+}
+
+
+.main-menu {
+    width: 600px;
+}
+
+.main-menu ul {
+    list-style-type: none;
+}
+
+.logo-text h1 {
+    color: yellow;
+}
+
+.o_sayte {
+    height: 600px;
+    background-color: #CFCDCD;
+    margin: 10px;
+}
+
+.o_sayte h2 {
+    color: black;
+}
+
+.katalog_igr {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.text-info p {
+    color: black;
+}
+
+.footer_end {
+    background-color: black;
+}
